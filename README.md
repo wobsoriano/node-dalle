@@ -10,40 +10,36 @@ npm install dalle
 
 <details>
 
-<summary>Complete instructions</summary>
-
-### **Linux**: install node, npm, node-gyp, python3, python3-dev, g++ and make
-
-#### Install Node
-```
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-sudo apt install nodejs
-```
+<summary>Linux</summary>
 
 #### Install Python
-```
+```bash
 sudo apt install python3
 sudo apt install python3-dev
 ```
 
 #### Install Node-gyp
-```
+```bash
 sudo apt install make
 sudo apt install g++
 sudo npm install -g node-gyp
 ```
 
-### **Windows**: install [NodeJS](https://nodejs.org/en/download/) and [Python](https://www.python.org/downloads/)
-  
+</details>
+
+<details>
+<summary>Windows</summary>
+
 #### Install Node-gyp if missing
-```
+```bash
 npm install --global --production windows-build-tools
 npm install -g node-gyp
 ```
+</details>
 
-### **Mac**: install XCode from AppStore, [NodeJS](https://nodejs.org/en/download/) and [Python](https://www.python.org/downloads/)
-
+<details>
+<summary>Mac</summary>
+Install XCode from AppStore, Python
 </details>
 
 ## Usage

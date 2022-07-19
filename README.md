@@ -6,7 +6,9 @@
 npm install dalle
 ```
 
-Sometimes you have to install prerequisites to make it work.
+<details>
+
+<summary>Complete instructions</summary>
 
 ### **Linux**: install node, npm, node-gyp, python3, python3-dev, g++ and make
 
@@ -39,6 +41,8 @@ npm install -g node-gyp
 ```
 
 ### **Mac**: install XCode from AppStore, [NodeJS](https://nodejs.org/en/download/) and [Python](https://www.python.org/downloads/)
+
+</details>
 
 ## Usage
 

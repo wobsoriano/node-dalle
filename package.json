@@ -1,16 +1,15 @@
 {
-  "name": "pkg-name",
+  "name": "dalle",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.3.0",
   "description": "",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/wobsoriano/pkg-name#readme",
+  "homepage": "https://github.com/wobsoriano/node-dalle#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wobsoriano/pkg-name.git"
+    "url": "git+https://github.com/wobsoriano/node-dalle.git"
   },
-  "bugs": "https://github.com/wobsoriano/pkg-name/issues",
+  "bugs": "https://github.com/wobsoriano/node-dalle/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -28,20 +27,22 @@
   ],
   "scripts": {
     "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "nr build-fast --dts-resolve",
+    "build": "npm run build-fast --dts-resolve",
     "lint": "eslint .",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "npm run build",
     "release": "bumpp && npm publish",
-    "start": "tsx src/index.ts",
+    "start": "tsx playground.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "node-calls-python": "^1.6.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
     "@antfu/ni": "^0.16.2",
     "bumpp": "^8.2.1",
     "eslint": "^8.18.0",
-    "pnpm": "^7.3.0",
     "tsup": "6.0.1",
     "tsx": "^3.4.3",
     "typescript": "^4.7.4",
@@ -49,8 +50,5 @@
   },
   "eslintConfig": {
     "extends": "@antfu"
-  },
-  "dependencies": {
-    "node-calls-python": "^1.6.3"
   }
 }

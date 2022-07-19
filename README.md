@@ -1,5 +1,7 @@
 # node-dalle
 
+AI model drawing images for Node using [min(DALL·E)](https://github.com/kuprel/min-dalle).
+
 ## Installation
 
 ```bash

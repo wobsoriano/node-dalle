@@ -17,7 +17,7 @@ def generate_image(
         models_root=models_root,
         is_reusable=False,
         is_verbose=True,
-        dtype=torch.float16 if fp16 else torch.float32
+        dtype=torch.float16 if fp16 else torch.float32,
     )
 
     image = model.generate_image(
@@ -25,7 +25,7 @@ def generate_image(
         seed, 
         grid_size, 
         top_k=top_k, 
-        is_verbose=True
+        is_verbose=True,
     )
 
     buffered = BytesIO()

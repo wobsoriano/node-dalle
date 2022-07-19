@@ -53,8 +53,8 @@ import { generateImage } from 'dalle'
 import ImageDataURI from 'image-data-uri'
 
 async function start() {
-  const dataURI = await generateImage('Dali painting of WALL·E', { gridSize: 2 })
-  ImageDataURI.outputFile(result, 'generated.png')
+  const dataURI = await generateImage('Nuclear explosion broccoli', { gridSize: 2 })
+  ImageDataURI.outputFile(result, 'brocolli.png')
 }
 
 start()

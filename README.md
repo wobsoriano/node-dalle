@@ -60,7 +60,7 @@ async function start() {
 start()
 ```
 
-<img src="https://i.imgur.com/4g1KkYk.png" width="200" />
+<img src="https://i.imgur.com/4g1KkYk.png" width="300" />
 
 The `generateImage` function will load the model parameters once and reuse the model to generate multiple images.
 

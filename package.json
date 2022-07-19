@@ -10,7 +10,12 @@
     "url": "git+https://github.com/wobsoriano/node-dalle.git"
   },
   "bugs": "https://github.com/wobsoriano/node-dalle/issues",
-  "keywords": ["dalle", "ai", "python", "images"],
+  "keywords": [
+    "dalle",
+    "ai",
+    "python",
+    "images"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -41,6 +46,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.1",
     "@antfu/ni": "^0.16.2",
+    "@types/node": "^18.0.6",
     "bumpp": "^8.2.1",
     "eslint": "^8.18.0",
     "tsup": "6.0.1",

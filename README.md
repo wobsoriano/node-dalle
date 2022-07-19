@@ -8,6 +8,8 @@ AI model drawing images for Node using [min(DALL·E)](https://github.com/kuprel/
 npm install dalle
 ```
 
+Sometimes you have to install prerequisites to make it work. Check below:
+
 <details>
 
 <summary>Linux</summary>

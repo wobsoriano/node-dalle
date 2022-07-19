@@ -6,18 +6,24 @@ import torch
 def generate_image(
     text: str,
     grid_size: int = 1,
-    is_mega: bool = False,
+    is_mega: bool = True,
     seed: int = -1,
     top_k: int = 256,
     models_root: str = 'pretrained',
     fp16: bool = False,
+    is_seamless: bool = False,
+    temperature: float = 1,
+    supercondition_factor: int = 16
 ):
     model = MinDalle(
         is_mega=is_mega, 
         models_root=models_root,
         is_reusable=False,
         is_verbose=True,
-        dtype=torch.float16 if fp16 else torch.float32
+        dtype=torch.float16 if fp16 else torch.float32,
+        is_seamless=is_seamless,
+        temperature=temperature,
+        supercondition_factor=supercondition_factor
     )
 
     image = model.generate_image(

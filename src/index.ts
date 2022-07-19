@@ -2,7 +2,7 @@ import path from 'path'
 import nodecallspython from 'node-calls-python'
 
 const py = nodecallspython.interpreter
-const pyFile = path.join(__dirname, 'main.py')
+const pyFile = path.join(__dirname, '../', 'main.py')
 
 export interface Options {
   gridSize?: number

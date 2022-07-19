@@ -6,7 +6,7 @@ import torch
 def generate_image(
     text: str,
     grid_size: int = 1,
-    is_mega: bool = True,
+    is_mega: bool = False,
     seed: int = -1,
     top_k: int = 256,
     models_root: str = 'pretrained',

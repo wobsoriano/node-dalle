@@ -54,7 +54,7 @@ import ImageDataURI from 'image-data-uri'
 
 async function start() {
   const dataURI = await generateImage('Nuclear explosion broccoli', { gridSize: 2 })
-  ImageDataURI.outputFile(result, 'brocolli.png')
+  ImageDataURI.outputFile(dataURI, 'brocolli.png')
 }
 
 start()

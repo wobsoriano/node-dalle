@@ -1,11 +1,18 @@
-# library-starter
+# node-dalle
 
-Features:
+## Install
 
-- Package manager [pnpm](https://pnpm.js.org/), safe and fast
-- Execute TypeScript with [tsx](https://github.com/esbuild-kit/tsx)
-- Bundle with [tsup](https://github.com/egoist/tsup)
-- Test with [vitest](https://vitest.dev)
+```bash
+npm install dalle
+```
+
+## Usage
+
+```js
+import { generateImage } from 'dalle'
+
+const dataURI = await generateImage('Reddit admin touch grass')
+```
 
 ## License
 

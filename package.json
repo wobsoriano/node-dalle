@@ -49,6 +49,7 @@
     "@types/node": "^18.0.6",
     "bumpp": "^8.2.1",
     "eslint": "^8.18.0",
+    "image-data-uri": "^2.0.1",
     "tsup": "6.0.1",
     "tsx": "^3.4.3",
     "typescript": "^4.7.4"

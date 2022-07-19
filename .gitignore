@@ -18,3 +18,4 @@ README
 .cog
 cog
 node_modules
+*.png

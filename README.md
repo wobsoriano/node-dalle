@@ -50,14 +50,18 @@ npm install -g node-gyp
 
 ```js
 import { generateImage } from 'dalle'
+import ImageDataURI from 'image-data-uri'
 
 async function start() {
   const dataURI = await generateImage('Reddit admin touch grass')
-  console.log(dataURI)
+  ImageDataURI.outputFile(result, 'generated.png')
 }
 
 start()
 ```
+
+The `generateImage` function will load the model parameters once and reuse the model to generate multiple images.
+
 
 ## License
 

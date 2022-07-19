@@ -30,9 +30,7 @@ sudo npm install -g node-gyp
 <details>
 <summary>Windows</summary>
 
-Install Python
-
-#### Install Node-gyp if missing
+#### Install Python, Node-gyp if missing
 ```bash
 npm install --global --production windows-build-tools
 npm install -g node-gyp
@@ -41,7 +39,9 @@ npm install -g node-gyp
 
 <details>
 <summary>Mac</summary>
-Install XCode from AppStore, Python
+
+#### Install XCode from AppStore, Python
+
 </details>
 
 ## Usage

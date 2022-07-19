@@ -1,17 +1,56 @@
 # node-dalle
 
-## Install
+## Installation
 
 ```bash
 npm install dalle
 ```
+
+Sometimes you have to install prerequisites to make it work.
+
+### **Linux**: install node, npm, node-gyp, python3, python3-dev, g++ and make
+
+#### Install Node
+```
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt install nodejs
+```
+
+#### Install Python
+```
+sudo apt install python3
+sudo apt install python3-dev
+```
+
+#### Install Node-gyp
+```
+sudo apt install make
+sudo apt install g++
+sudo npm install -g node-gyp
+```
+
+### **Windows**: install [NodeJS](https://nodejs.org/en/download/) and [Python](https://www.python.org/downloads/)
+  
+#### Install Node-gyp if missing
+```
+npm install --global --production windows-build-tools
+npm install -g node-gyp
+```
+
+### **Mac**: install XCode from AppStore, [NodeJS](https://nodejs.org/en/download/) and [Python](https://www.python.org/downloads/)
 
 ## Usage
 
 ```js
 import { generateImage } from 'dalle'
 
-const dataURI = await generateImage('Reddit admin touch grass')
+async function start() {
+  const dataURI = await generateImage('Reddit admin touch grass')
+  console.log(dataURI)
+}
+
+start()
 ```
 
 ## License
